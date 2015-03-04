@@ -3,9 +3,14 @@
 
   <remote  name="aosp"
            fetch=".." />
+           
+  <remote  name="caseyRemote"
+           fetch="https://github.com/caseyvill/"/>
+           
   <default revision="refs/tags/android-5.0.1_r1"
            remote="aosp"
            sync-j="4" />
+
 
   <project path="build" name="platform/build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
